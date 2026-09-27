@@ -82,6 +82,6 @@ python test.py --model face_classifier.pt --folder path/to/folder --threshold 0.
 - This is an open-set problem in practice (anyone in the world could appear in a test photo), so the "unidentified" class can only ever approximate "not Ghaith, not Aziz" based on the diversity it saw during training.
 - Model accuracy depends heavily on matching the training photo distribution (camera type, lighting, framing) to how it'll actually be used.
 
-## License
+## Credits
 
-Add your preferred license here.
+Ghaith Hajji, IT and Data Analytics Senior Student at Tunis Business School.
