@@ -1,0 +1,17 @@
+# Do NOT just run `pip install -r requirements.txt` for torch/torchvision on Python 3.14 -
+# install them first from PyTorch's own index, THEN install the rest of this file.
+#
+#   pip install --upgrade pip
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#   (swap the URL for a CUDA index instead if you have an NVIDIA GPU)
+#   pip install -r requirements.txt
+#
+# torch/torchvision are intentionally left OUT of the pinned list below since they're
+# installed separately above - pip's default index may not resolve 3.14 wheels correctly.
+
+Pillow>=9.0.0
+
+# Optional, only needed for the face-cropping helper (MTCNN). Skip this line entirely if
+# it fails to install - facenet-pytorch is not actively maintained and may lag behind
+# very new Python versions like 3.14. Everything in train.py/test.py works without it.
+# facenet-pytorch>=2.5.3
